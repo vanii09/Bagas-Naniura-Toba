@@ -1,0 +1,79 @@
+:root{
+    --blue:#638fd1;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+
+}
+header {
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem black rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder ;
+}
+
+header .logo span{
+    color: var(--blue);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color:var(--blue);   
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--blue);   
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor:pointer;
+    border: .1rem solid black rgba(0,0,0,.3);
+    display: none;
+}
+
+body {
+    background-image:url("https://cdn0-production-images-kly.akamaized.net/QsOMswaiPYOH206Kxga96pQZtEs=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4924560/original/063555200_1724288516-Naniura.jpg");
+
+}
