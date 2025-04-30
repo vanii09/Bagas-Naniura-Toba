@@ -1,112 +1,154 @@
-:root{
-    --blue:#638fd1;
+:root {
+    --blue: #638fd1;
+    --dark-blue: #4a74b0;
+    --light-gray: #f9f9f9;
+    --text-color: #333;
+    --white: #fff;
 }
-*{
-    margin:0; padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    outline: none; border:none;
-    text-transform: capitalize;
-    transition: .2s linear;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('https://regalsprings.co.id/wp-content/uploads/2023/05/Danau-Toba.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 300%;
-    scroll-behavior: smooth ;
-    scroll-padding: 6rem;
-    overflow-x: hidden;
-    margin: 100px;
-}
-.Horas {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+    background: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-.Horas h1{
-    font-size: 2.5rem;
-    background-color: rgba(10, 9, 9, 0.941);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-color: rgb(17, 17, 17);
-    text-align: center;
-}
-html{
-    font-size: 45%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
-    overflow-x: hidden;
-
-}
 header {
     position: fixed;
-    top:0; left:0; right:0;
-    background:#fff;
-    padding:2rem 9%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 1.5rem 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem black rgba(0,0,0,.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-header .logo{
-    font-size: 3rem;
-    color:#333;
-    font-weight: bolder ;
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color);
 }
 
-header .logo span{
+header .logo span {
     color: var(--blue);
 }
 
-header .navbar a{
-    font-size: 2rem;
-    padding:0 1.5rem;
+header .navbar a {
+    font-size: 1.5rem;
+    margin: 0 1rem;
     color: #666;
+    text-decoration: none;
 }
 
-header .navbar a:hover{
-    color:var(--blue);   
+header .navbar a:hover {
+    color: var(--blue);
 }
 
-header .icons a{
-    font-size: 2.5rem;
-    color: #333;
-    margin-left: 1.5rem;
+header .icons a {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    color: var(--text-color);
 }
 
-header .icons a:hover{
-    color:var(--blue);   
+header .icons a:hover {
+    color: var(--blue);
 }
 
-header #toggler{
-    display: none;
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 5%;
+    background: var(--white);
 }
 
-header .fa-bars{
+.home .welcome {
+    max-width: 50%;
+}
+
+.home .welcome h1 {
     font-size: 3rem;
-    color: #333;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    cursor:pointer;
-    border: .1rem solid black rgba(0,0,0,.3);
-    display: none;
+    color: var(--text-color);
+    margin-bottom: 1rem;
 }
 
+.home .welcome h1 span {
+    color: var(--blue);
+}
+
+.home .welcome p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.home .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.home .btn:hover {
+    background: var(--dark-blue);
+}
+
+.home .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+    padding: 5rem 5%;
+    text-align: center;
+    background: var(--light-gray);
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.about .btn {
+    padding: 0.8rem 2rem;
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.about .btn:hover {
+    background: var(--dark-blue);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 1.2rem;
+}

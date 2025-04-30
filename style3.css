@@ -1,0 +1,156 @@
+:root{
+    --blue:#638fd1;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 45%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+
+}
+body {
+    background:url(backgroundimg.png) no-repeat center center/cover;
+    background-size: 100000%;
+}
+header {
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem black rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder ;
+}
+
+header .logo span{
+    color: var(--blue);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color:var(--blue);   
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--blue);   
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor:pointer;
+    border: .1rem solid black rgba(0,0,0,.3);
+    display: none;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    max-width: 100px;
+    min-height: 100px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-img img {
+    width: 100%;
+    height: 100px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd;
+}
+
+/* Konten dalam card */
+.card-content {
+    padding: 15px;
+}
+
+.card .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card .deskripsi {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.card .harga {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card button {
+    padding: 10px 20px;
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s ease;
+}
+
+.card button:hover {
+    background: #4a74b0;
+}
