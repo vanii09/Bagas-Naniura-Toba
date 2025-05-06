@@ -1,6 +1,11 @@
 :root {
     --blue: #638fd1;
+    --dark-blue: #4a74b0;
+    --light-gray: #f9f9f9;
+    --text-color: #333;
+    --white: #fff;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +25,10 @@ html {
 }
 
 body {
-    background: url(backgroundimg.png) no-repeat center center/cover;
-    background-size: cover;
+    background: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem;
 }
 
 header {
@@ -29,8 +36,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
-    padding: 2rem 9%;
+    background: var(--white);
+    padding: 2rem 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,9 +46,14 @@ header {
 }
 
 header .logo {
-    font-size: 3rem;
-    color: #333;
-    font-weight: bolder;
+    font-size: 4rem;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header .logo:hover {
+    color: var(--blue);
 }
 
 header .logo span {
@@ -49,9 +61,11 @@ header .logo span {
 }
 
 header .navbar a {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0 1.5rem;
     color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 header .navbar a:hover {
@@ -59,48 +73,50 @@ header .navbar a:hover {
 }
 
 header .icons a {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 3rem;
+    color: var(--text-color);
     margin-left: 1.5rem;
+    transition: color 0.3s ease;
 }
 
 header .icons a:hover {
     color: var(--blue);
 }
-
-header #toggler {
-    display: none;
-}
-
-header .fa-bars {
-    font-size: 3rem;
-    color: #333;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.5rem;
-    cursor: pointer;
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    display: none;
-}
-
 .about {
-    height: 700px;
+    background: var(--light-gray);
+    padding: 10rem 20%;
     text-align: center;
-    padding-top: 100px;
-    font-family: courier;
-    color: white;
+    color: var(--text-color);
 }
 
 .about img {
-    height: 300px;
+    height: 400px;
+    width: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about .aboutBagasNaniuraToba {
-    width: 60%;
+    max-width: 800px;
     margin: auto;
-    color: white;
+    text-align: center;
 }
 
 .about .aboutBagasNaniuraToba h2 {
-    font-family: 'Inspiration';
-    font-size: 100px;
+    font-family: 'Inspiration', cursive;
+    font-size: 4rem;
+    color: var(--blue);
+    margin-bottom: 2rem;
+}
+
+.about .aboutBagasNaniuraToba p {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.about .aboutBagasNaniuraToba p:last-child {
+    margin-bottom: 0;
 }
