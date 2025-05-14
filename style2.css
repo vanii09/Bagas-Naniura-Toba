@@ -18,9 +18,9 @@
 }
 
 html {
-    font-size: 50%;
+    font-size: 50%; 
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 60px; 
     overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ body {
     background: var(--light-gray);
     color: var(--text-color);
     line-height: 1.6;
-    padding: 2rem;
+    padding: 20px; 
 }
 
 header {
@@ -37,16 +37,16 @@ header {
     left: 0;
     right: 0;
     background: var(--white);
-    padding: 2rem 5%;
+    padding: 20px 5%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
 }
 
 header .logo {
-    font-size: 4rem;
+    font-size: 40px; 
     color: var(--text-color);
     font-weight: bold;
     transition: color 0.3s ease;
@@ -61,8 +61,8 @@ header .logo span {
 }
 
 header .navbar a {
-    font-size: 2.5rem;
-    padding: 0 1.5rem;
+    font-size: 25px; 
+    padding: 0 24px; 
     color: #666;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -73,18 +73,19 @@ header .navbar a:hover {
 }
 
 header .icons a {
-    font-size: 3rem;
+    font-size: 30px;
     color: var(--text-color);
-    margin-left: 1.5rem;
+    margin-left: 24px; 
     transition: color 0.3s ease;
 }
 
 header .icons a:hover {
     color: var(--blue);
 }
+
 .about {
     background: var(--light-gray);
-    padding: 10rem 20%;
+    padding: 100px 20%;
     text-align: center;
     color: var(--text-color);
 }
@@ -93,7 +94,7 @@ header .icons a:hover {
     height: 400px;
     width: auto;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -105,16 +106,16 @@ header .icons a:hover {
 
 .about .aboutBagasNaniuraToba h2 {
     font-family: 'Inspiration', cursive;
-    font-size: 4rem;
+    font-size: 40px; 
     color: var(--blue);
-    margin-bottom: 2rem;
+    margin-bottom: 32px; 
 }
 
 .about .aboutBagasNaniuraToba p {
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 1.8;
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
 .about .aboutBagasNaniuraToba p:last-child {

@@ -18,9 +18,9 @@
 }
 
 html {
-    font-size: 50%;
+    font-size: 30%;
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 96px; 
     overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ body {
     background: var(--light-gray);
     color: var(--text-color);
     line-height: 1.6;
-    padding: 2rem;
+    padding: 8px; 
 }
 
 header {
@@ -37,16 +37,16 @@ header {
     left: 0;
     right: 0;
     background: var(--white);
-    padding: 2rem 5%;
+    padding: 8px 2%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
 }
 
 header .logo {
-    font-size: 4rem;
+    font-size: 48px; 
     color: var(--text-color);
     font-weight: bold;
     transition: color 0.3s ease;
@@ -61,8 +61,8 @@ header .logo span {
 }
 
 header .navbar a {
-    font-size: 2.5rem;
-    padding: 0 1.5rem;
+    font-size: 16px;
+    padding: 0 16px;
     color: #666;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -73,9 +73,9 @@ header .navbar a:hover {
 }
 
 header .icons a {
-    font-size: 3rem;
+    font-size: 16px; 
     color: var(--text-color);
-    margin-left: 1.5rem;
+    margin-left: 8px; 
     transition: color 0.3s ease;
 }
 
@@ -85,69 +85,44 @@ header .icons a:hover {
 
 .contact img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px; 
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact .cardContact {
-    margin: 2rem auto;
-    padding: 2rem;
+    margin: 24px auto; 
+    padding: 24px; 
     width: 100%;
     max-width: 400px;
     background: var(--blue);
     color: var(--white);
-    font-size: 2rem;
+    font-size: 24px; 
     text-align: center;
-    border-radius: 15px;
+    border-radius: 12px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact .cardContact:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 .contact .cardContact h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 32px; 
+    margin-bottom: 12px;
 }
 
 .contact .cardContact p {
-    font-size: 1.8rem;
-    line-height: 1.8;
-    margin: 1rem 0;
+    font-size: 20px;
+    line-height: 1.6; 
+    margin: 12px 0;
 }
 
 footer {
     text-align: center;
-    padding: 2rem 0;
+    padding: 24px 0; 
     background: var(--blue);
-    color: var(--white);
-    font-size: 1.2rem;
-    position: relative;
-}
-
-footer .social-icons {
-    margin: 1rem 0;
-}
-
-footer .social-icons a {
-    font-size: 2rem;
-    margin: 0 1rem;
-    color: var(--white);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-    color: var(--dark-blue);
-}
-
-footer p {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: var(--white);
 }
